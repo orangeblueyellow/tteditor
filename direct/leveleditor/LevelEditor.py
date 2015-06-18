@@ -44,7 +44,7 @@ from LevelStyleManager import *
 base.startDirect(fWantDirect = 1, fWantTk = 1)
 
 visualizeZones = base.config.GetBool("visualize-zones", 0)
-dnaDirectory = Filename.expandFrom(base.config.GetString("dna-directory", "phase_3/dna"))
+dnaDirectory = Filename.expandFrom(base.config.GetString("dna-directory", "leveleditor"))
 fUseCVS = base.config.GetBool("level-editor-use-cvs", 1)
 useSnowTree = base.config.GetBool("use-snow-tree", 0)
 
@@ -463,7 +463,7 @@ class LevelEditor(NodePath, DirectObject):
 
         # SUIT POINTS
         # Create a sphere model to show suit points
-        self.suitPointMarker = loader.loadModel('phase_3/models/misc/sphere.bam')
+        self.suitPointMarker = loader.loadModel('models/misc/sphere.bam')
         self.suitPointMarker.setScale(0.25)
 
         # Initialize the suit points
@@ -472,7 +472,7 @@ class LevelEditor(NodePath, DirectObject):
         self.currentSuitPointType = DNASuitPoint.STREETPOINT
 
         # BATTLE CELLS
-        self.battleCellMarker = loader.loadModel('phase_3/models/misc/sphere.bam')
+        self.battleCellMarker = loader.loadModel('models/misc/sphere.bam')
         self.battleCellMarker.setName('battleCellMarker')
         self.battleCellMarker.setScale(1)
         self.currentBattleCellType = "20w 20l"

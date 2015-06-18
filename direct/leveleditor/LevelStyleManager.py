@@ -6,7 +6,7 @@ from direct.gui.DirectGui import *
 from PieMenu import *
 from ScrollMenu import *
 
-dnaDirectory = Filename.expandFrom(base.config.GetString("dna-directory", "phase_3/dna"))
+dnaDirectory = Filename.expandFrom(base.config.GetString("dna-directory", "leveleditor"))
 
 
 # Colors used by all color menus
