@@ -36,7 +36,7 @@ class DirectSession(DirectObject):
         self.group = render.attachNewNode('DIRECT')
         self.font = TextNode.getDefaultFont()
         if not self.font:
-            self.font = loader.loadFont('phase_3/models/fonts/ImpressBT.ttf')
+            self.font = loader.loadFont('models/fonts/ImpressBT.ttf')
         self.fEnabled = 0
         self.fEnabledLight = 0
         self.fScaleWidgetByCam = 0 # [gjeon] flag for scaling widget by distance from the camera

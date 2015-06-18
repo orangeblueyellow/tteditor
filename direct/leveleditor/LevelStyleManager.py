@@ -970,7 +970,7 @@ class LevelStyleManager:
         for i in range (numItems):
             # Create a text node--just a card, really--of the right color.
             tn = TextNode('colorChip')
-            font = loader.loadFont('phase_3/models/fonts/ImpressBT.ttf')
+            font = loader.loadFont('models/fonts/ImpressBT.ttf')
             tn.setFont(font)
             tn.setTransform(Mat4.scaleMat(0.07, 0.07, 0.07 * aspectRatio))
             tn.setCardColor(colorList[i])
@@ -1099,7 +1099,7 @@ class LevelStyleManager:
             # Create text node for each item
             if (textList[i] != None):
                 tn = TextNode('TextItem')
-                font = loader.loadFont('phase_3/models/fonts/ImpressBT.ttf')
+                font = loader.loadFont('models/fonts/ImpressBT.ttf')
                 tn.setFont(font)
                 tn.setTransform(Mat4.scaleMat(0.07, 0.07, 0.07 * aspectRatio))
                 tn.setTextColor(0, 0, 0, 1)

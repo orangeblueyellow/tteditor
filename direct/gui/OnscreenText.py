@@ -172,7 +172,7 @@ class OnscreenText(DirectObject, NodePath):
         if font:
             textNode.setFont(font)
         else:
-            textNode.setFont(loader.loadFont('phase_3/models/fonts/ImpressBT.ttf'))
+            textNode.setFont(loader.loadFont('models/fonts/ImpressBT.ttf'))
 
         textNode.setTextColor(fg[0], fg[1], fg[2], fg[3])
         textNode.setAlign(align)

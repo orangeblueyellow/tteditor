@@ -22,7 +22,7 @@ class DirectCameraControl(DirectObject):
         self.orthoViewRoll = 0.0
         self.lastView = 0
         self.coa = Point3(0, 100, 0)
-        self.coaMarker = loader.loadModel('phase_3/models/misc/sphere.bam')
+        self.coaMarker = loader.loadModel('models/misc/sphere.bam')
         self.coaMarker.setName('DirectCameraCOAMarker')
         self.coaMarker.setTransparency(1)
         self.coaMarker.setColor(1, 0, 0, 0)
