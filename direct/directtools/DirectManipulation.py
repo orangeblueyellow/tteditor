@@ -1066,7 +1066,7 @@ class ObjectHandles(NodePath, DirectObject):
         NodePath.__init__(self)
 
         # Load up object handles model and assign it to self
-        self.assign(loader.loadModel('phase_3/models/misc/objectHandles.bam'))
+        self.assign(loader.loadModel('models/misc/objectHandles.bam'))
         self.setName(name)
         self.scalingNode = self.getChild(0)
         self.scalingNode.setName('ohScalingNode')
