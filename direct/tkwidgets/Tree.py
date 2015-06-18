@@ -30,7 +30,7 @@ from pandac.PandaModules import *
 # Initialize icon directory
 ICONDIR = ConfigVariableSearchPath('model-path').findFile(Filename('icons')).toOsSpecific()
 if not ICONDIR: # Let's just force it.
-    ICONDIR = 'C:\Panda3D-1.7.2\models\icons'
+    ICONDIR = 'models/icons'
 if not os.path.isdir(ICONDIR):
     raise RuntimeError, "can't find DIRECT icon directory (%s)" % repr(ICONDIR)
 
