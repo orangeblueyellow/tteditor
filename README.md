@@ -3,7 +3,7 @@ Working version of Disney's Toontown Level Editor, which is found in Panda3D 1.6
 
 # This repository contains:
 - Heavily modified Panda3D that can import "libotp" and "libtoontown" (contains DNA parser for the editor).
-- All 56 style files (blank, but good enough) that are needed to load the editor.
+- All 56 style files (some are blank, but good enough) that are needed to load the editor.
 - Working level editor :D
 
 # How to use:
