@@ -13,7 +13,7 @@ wall_color: Vec4(0.91, 0.91, 0.54, 1.0)
 window_texture: window_sm_square_ur
 window_color: Vec4(0.65, 0.40, 0.82, 1.0)
 cornice_texture: cornice_curved_ur
-corniceColor: Vec4(0.68, 0.22, 0.80, 1.0)
+cornice_color: Vec4(0.68, 0.22, 0.80, 1.0)
 endWallStyle
 
 wallStyle
@@ -40,7 +40,7 @@ wall_color: Vec4(0.80, 0.80, 0.47, 1.0)
 window_texture: window_sm_square_ur
 window_color: Vec4(0.56, 0.80, 0.65, 1.0)
 cornice_texture: cornice_marble_ur
-corniceColor: Vec4(0.80, 0.22, 0.68, 1.0)
+cornice_color: Vec4(0.80, 0.22, 0.68, 1.0)
 endWallStyle
 
 wallStyle
@@ -67,7 +67,7 @@ wall_color: Vec4(0.96, 0.96, 0.47, 1.0)
 window_texture: window_sm_round_ur
 window_color: Vec4(0.69, 0.33, 0.69, 1.0)
 cornice_texture: cornice_brick_ur
-corniceColor: Vec4(0.81, 0.30, 0.51, 1.0)
+cornice_color: Vec4(0.81, 0.30, 0.51, 1.0)
 endWallStyle
 
 wallStyle
@@ -94,5 +94,5 @@ wall_color: Vec4(0.97, 0.36, 0.36, 1.0)
 window_texture: window_sm_curved_ur
 window_color: Vec4(0.97, 0.87, 0.47, 1.0)
 cornice_texture: cornice_curved_ur
-corniceColor: Vec4(0.43, 0.32, 0.85, 1.0)
+cornice_color: Vec4(0.43, 0.32, 0.85, 1.0)
 endWallStyle
