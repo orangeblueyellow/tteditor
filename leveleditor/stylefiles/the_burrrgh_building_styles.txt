@@ -1,1 +1,10 @@
- 
+buildingStyle: 10_10
+wallStyle
+wall_texture: wall_lg_brick_ur
+wall_color: Vec4(0.25, 0.64, 0.91, 1.0)
+window_texture: window_sm_round_ur
+window_color: Vec4(0.23, 0.71, 0.84, 1.0)
+cornice_texture: None
+cornice_color: Vec4(1.0, 1.0, 1.0, 1.0)
+endWallStyle
+endBuildingStyle
