@@ -1,1 +1,10 @@
- 
+buildingStyle: 10_10
+wallStyle
+wall_texture: wall_md_blank_ur
+wall_color: Vec4(0.417323, 0.15711, 0.15711, 1.0)
+window_texture: window_sm_square_ur
+window_color: Vec4(0.874016, 0.654655, 0.329041, 1.0)
+cornice_texture: cornice_marble_ur
+cornice_color: Vec4(0.76378, 0.572086, 0.287541, 1.0)
+endWallStyle
+endBuildingStyle
