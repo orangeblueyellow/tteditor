@@ -2083,7 +2083,7 @@ class ShowBase(DirectObject.DirectObject):
             self.oobe2cam = self.oobeTrackball.attachNewNode(Transform2SG('oobe2cam'))
             self.oobe2cam.node().setNode(self.oobeCameraTrackball.node())
 
-            self.oobeVis = loader.loadModel('models/misc/camera', okMissing = True)
+            self.oobeVis = loader.loadModel('models/misc/camera.bam', okMissing = True)
             if not self.oobeVis:
                 self.oobeVis = NodePath('oobeVis')
             self.oobeVis.node().setFinal(1)

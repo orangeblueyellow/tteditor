@@ -395,7 +395,7 @@ class DirectSession(DirectObject):
 
             self.oobeCamera = hidden.attachNewNode('oobeCamera')
 
-            self.oobeVis = loader.loadModel('models/misc/camera')
+            self.oobeVis = loader.loadModel('models/misc/camera.bam')
             if self.oobeVis:
                 self.oobeVis.node().setFinal(1)
 
