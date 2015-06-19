@@ -359,6 +359,8 @@ class LevelEditor(NodePath, DirectObject):
         # toplevel group (since it doesn't exist yet)
         self.reset(fDeleteToplevel = 0, fCreateToplevel = 1)
 
+        base.accept('o', base.oobe)
+
         # The list of events the level editor responds to
         self.actionEvents = [
             # Node path events
