@@ -45,7 +45,7 @@ base.startDirect(fWantDirect = 1, fWantTk = 1)
 
 visualizeZones = base.config.GetBool("visualize-zones", 0)
 dnaDirectory = Filename.expandFrom(base.config.GetString("dna-directory", "leveleditor"))
-fUseCVS = base.config.GetBool("level-editor-use-cvs", 1)
+fUseCVS = base.config.GetBool("level-editor-use-cvs", 0)
 useSnowTree = base.config.GetBool("use-snow-tree", 0)
 
 # Colors used by all color menus
@@ -279,8 +279,8 @@ except NameError:
     if 'CS' in hoods:
         loadDNAFile(DNASTORE, 'phase_9/dna/storage_CS.dna', CSDefault, 1)
     if 'GS' in hoods:
-        loadDNAFile(DNASTORE, 'phase_4/dna/storage_GS.dna', CSDefault, 1)
-        loadDNAFile(DNASTORE, 'phase_4/dna/storage_GS_sz.dna', CSDefault, 1)
+        loadDNAFile(DNASTORE, 'phase_6/dna/storage_GS.dna', CSDefault, 1)
+        loadDNAFile(DNASTORE, 'phase_6/dna/storage_GS_sz.dna', CSDefault, 1)
     if 'OZ' in hoods:
         loadDNAFile(DNASTORE, 'phase_6/dna/storage_OZ.dna', CSDefault, 1)
         loadDNAFile(DNASTORE, 'phase_6/dna/storage_OZ_sz.dna', CSDefault, 1)
@@ -3305,9 +3305,9 @@ class LevelEditor(NodePath, DirectObject):
         visGroups = self.getDNAVisGroups(self.NPToplevel)
         for visGroup in visGroups:
             np = visGroup[0]
-            np.setColor(0.5 + random()/2.0,
-                        0.5 + random()/2.0,
-                        0.5 + random()/2.0)
+            np.setColor(0.5 + random.random()/2.0,
+                        0.5 + random.random()/2.0,
+                        0.5 + random.random()/2.0)
 
     def clearZoneColors(self):
         # Clear random colors
@@ -4149,14 +4149,15 @@ class LevelEditorPanel(Pmw.MegaToplevel):
                             'Save DNA File',
                             label = 'Save DNA',
                             command = self.levelEditor.outputDNADefaultFile)
-        menuBar.addmenuitem('Level Editor', 'command',
-                            'CVS update directory',
-                            label = 'CVS update',
-                            command = self.levelEditor.cvsUpdateAll)
-        menuBar.addmenuitem('Level Editor', 'command',
-                            'CVS commit directory',
-                            label = 'CVS commit',
-                            command = self.levelEditor.cvsCommitAll)
+        if fUseCVS == True:
+          menuBar.addmenuitem('Level Editor', 'command',
+                              'CVS update directory',
+                              label = 'CVS update',
+                              command = self.levelEditor.cvsUpdateAll)
+          menuBar.addmenuitem('Level Editor', 'command',
+                              'CVS commit directory',
+                              label = 'CVS commit',
+                              command = self.levelEditor.cvsCommitAll)
         menuBar.addmenuitem('Level Editor', 'command',
                             'Edit Visibility Groups',
                             label = 'Edit Vis Groups',
